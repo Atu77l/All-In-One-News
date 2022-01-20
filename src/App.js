@@ -84,7 +84,7 @@ class App extends Component {
           })}
         </select>
         {
-          this.state.searchValue != '' ? <SearchNews search={searchValue} /> : this.state.sourceValue == 'headlines' ? <Headlines /> : <News source={sourceValue} />
+          this.state.searchValue !== '' ? <SearchNews search={searchValue} /> : this.state.sourceValue === 'headlines' ? <Headlines /> : <News source={sourceValue} />
         }
       </div>
     );
