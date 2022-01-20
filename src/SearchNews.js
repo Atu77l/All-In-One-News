@@ -24,7 +24,7 @@ class SearchNews extends Component {
     let { articles, search } = this.state
     const { classes } = this.props
 
-    if (search != this.props.search) this.reloadSearch()
+    if (search !== this.props.search) this.reloadSearch()
     return (
       <div className={classes.root}>
         <GridList cellHeight={180} className={classes.gridList}>
