@@ -24,7 +24,7 @@ class News extends Component {
     let { articles, source } = this.state
     const { classes } = this.props
 
-    if (source != this.props.source) this.reloadSource()
+    if (source !== this.props.source) this.reloadSource()
     return (
       <div className={classes.root}>
         <GridList cellHeight={180} className={classes.gridList}>
